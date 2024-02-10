@@ -52,7 +52,6 @@ class ComicController extends Controller
         $newComic->type = $formData['type'];
         $newComic->artists = json_encode(explode(',', $formData['artists']));
         $newComic->writers = json_encode(explode(',', $formData['writers']));
-
         $newComic->save();
 
 
@@ -97,8 +96,6 @@ class ComicController extends Controller
         ]);
         $data = $request->all();
 
-        //? $comic = Comic::findOrFail($id); in automatico se D.I.
-        
         $comic->title = $data['title'];
         $comic->description = $data['description'];
         $comic->thumb = $data['thumb'];
@@ -110,7 +107,6 @@ class ComicController extends Controller
         $comic->writers =  json_encode($data['writers']);
         $comic->save();
 
-        // $comic->update($data);
 
         return redirect()->route('guest.comics.show', $comic->id);
     }
