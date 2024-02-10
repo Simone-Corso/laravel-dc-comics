@@ -35,7 +35,11 @@
                             <div class="card-image">
                                 <img class="w-50" src="{{  $comic->thumb }}" alt="{{ $comic->title }} ">
                             </div>
-                                </a>
+                            <div class="actions mb-3 pt-3">
+                                <a href="{{ route('guest.comics.edit', $comic->id) }}">
+                                    <button class="btn btn-success">
+                                        Modifica questo fumetto
+                                    </button>
                             </div>
                         </div>
                     </div>
