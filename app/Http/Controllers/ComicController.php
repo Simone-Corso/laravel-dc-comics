@@ -50,8 +50,9 @@ class ComicController extends Controller
         $newComic->series = $formData['series'];
         $newComic->sale_date = Carbon::createFromFormat('d/m/Y', $formData['sale_date'])->format('Y-m-d');
         $newComic->type = $formData['type'];
-        $newComic->artists = $formData['artists'];
-        $newComic->writers = $formData['writers'];
+        $newComic->artists = json_encode(explode(',', $formData['artists']));
+        $newComic->writers = json_encode(explode(',', $formData['writers']));
+
         $newComic->save();
 
 
