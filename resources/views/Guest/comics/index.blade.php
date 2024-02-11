@@ -19,14 +19,14 @@
                                     <div class="text-center">
                                             <a href="{{ route('guest.comics.show', $comic['id']) }}" class="btn btn-primary w-50">Visualizza la card</a>
                                         </div>
-                            </form> 
-                            <form action="{{ route('guest.comics.create') }}" method="GET">
-                                        @csrf
-                                        <button type="submit" class="btn btn-primary w-50 mt-1 mb-4">Crea La Tua Card</button>
-                                </div>
-                                </div>
-                                </div>
-                            </a>
+                                    </form> 
+                                    <form action="{{ route('guest.comics.create') }}" method="GET">
+                                                @csrf
+                                                <button type="submit" class="btn btn-primary w-50 mt-1 mb-4">Crea La Tua Card</button>
+                                        </div>
+                                        </div>
+                                        </div>
+                                    </a>    
                         </div>
                     @endforeach
                 </div>
