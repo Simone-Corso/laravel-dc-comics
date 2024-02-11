@@ -1,7 +1,5 @@
-<div id="my-custom-container" class="container">
-    <div class="row">
-        <div class="col-12">
-
-        </div>
-    </div>
-</div>
+<nav class="navbar bg-primary d-flex justify-content-center align-items-center" data-bs-theme="dark">
+  <h1 class="title ">
+    Comics
+  </h1>
+</nav>
