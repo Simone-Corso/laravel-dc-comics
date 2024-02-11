@@ -3,8 +3,8 @@
 @section('main-content')
 <form action="{{ route('guest.comics.store') }}" method='POST'>
     @csrf    
-  <div class="row d-flex flex-column align-items-center">
-    <div class="col-7">
+  <div class="row d-flex align-items-center justify-content-center mt-5">
+    <div class="col-5">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="name">title</label>
