@@ -24,3 +24,4 @@ Route::post('/store', [ComicController::class, 'store'])->name('guest.comics.sto
 Route::get('/comics/create', [ComicController::class, 'create'])->name('guest.comics.create');
 Route::get('/comics/{id}', [ComicController::class, 'show'])->name('guest.comics.show');
 Route::get('/comics/{comic}/edit', [ComicController::class, 'edit'])->name('guest.comics.edit');
+Route::put('/comics/{comic}', [ComicController::class, 'update'])->name('guest.comics.update');
