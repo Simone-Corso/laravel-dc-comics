@@ -70,9 +70,7 @@
                         <label for="writers"class="form-label">Genere:</label>
                         <input type="text" name="writers" id="writers" class="form-control" value="{{ old( 'writers' ,$comic->writers) }}">
                     </div>
-
-
-                    <button type="submit" class="btn btn-primary">Modifica il fumetto</button>
+                    <button type="submit" class="btn btn-primary ">Modifica il fumetto</button>
                 </form>
             </div>
         </div>

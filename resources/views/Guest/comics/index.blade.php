@@ -16,8 +16,9 @@
                                     </div>
                                     <div class="d-flex justify-content-center flex-column">
                                     <div class="text-center">
-                                    <form action="{{ route('guest.comics.show', $comic['id']) }}">
-                                <button type="submit" class="btn btn-primary w-50 ">Visualizza la card</button>
+                                    <div class="text-center">
+                                            <a href="{{ route('guest.comics.show', $comic['id']) }}" class="btn btn-primary w-50">Visualizza la card</a>
+                                        </div>
                             </form> 
                             <form action="{{ route('guest.comics.create') }}" method="GET">
                                         @csrf
